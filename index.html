@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effet Parallaxe</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax {
+            height: 100vh;
+            background-image: url('https://source.unsplash.com/random/1920x1080');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            padding: 50px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax">Effet Parallaxe</div>
+    <div class="content">
+        <h2>Contenu Statique</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque...</p>
+    </div>
+    <div class="parallax">Un autre effet Parallaxe</div>
+    <div class="content">
+        <h2>Encore du Contenu</h2>
+        <p>Phasellus imperdiet. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque...</p>
+    </div>
+</body>
+</html>
